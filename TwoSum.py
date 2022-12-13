@@ -1,7 +1,6 @@
 """
 Two Sum
     EASY (Mon 5 Sept 2022)
-
     https://leetcode.com/problems/two-sum/
 """
 

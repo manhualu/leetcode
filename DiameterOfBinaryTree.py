@@ -1,7 +1,6 @@
 """
 Diameter of Binary Tree
     EASY (Wed 14 Dec 2022)
-    
     https://leetcode.com/problems/diameter-of-binary-tree/ 
 """
 
