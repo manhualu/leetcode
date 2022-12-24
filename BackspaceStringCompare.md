@@ -19,7 +19,7 @@ $$O(n)$$
 $$O(n)$$
 
 # Code
-```
+```py
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
         return self.process(s) == self.process(t)
