@@ -19,7 +19,7 @@ $$O(|V|)$$ where V is the number of nodes
 $$O(|D|)$$ where D is the maximal depth of the tree. In the case of a balanced tree, the space complexity will be O(log(|V|)) and unbalanced tree is O(|V|).
 
 # Code
-```
+```py
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
