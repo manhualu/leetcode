@@ -1,24 +1,36 @@
 # [Same Tree](https://leetcode.com/problems/same-tree/)
-##  EASY (Wed 28 Dec 2022)
+
+## EASY (Wed 28 Dec 2022)
 
 # Intuition
+
 <!-- Describe your first thoughts on how to solve this problem. -->
-Divide and conquer obviously lol, by looking at the right tree and left tree. Then returning true if both the right tree and left tree return tree as well as if the current node of p and q is equal. 
+
+Divide and conquer obviously lol, by looking at the right tree and left tree. Then returning true if both the right tree and left tree return tree as well as if the current node of p and q is equal.
 
 # Approach
+
 <!-- Describe your approach to solving the problem. -->
+
 Recursion
 
 # Complexity
+
 - Time complexity:
 <!-- Add your time complexity here, e.g. $$O(n)$$ -->
-$$O(|V|)$$ where V is the number of nodes
+- Time complexity:
+  <!-- Add your time complexity here, e.g. $$O(n)$$ -->
+
+  $$O(|V|)$$
+  where V is the number of nodes
 
 - Space complexity:
-<!-- Add your space complexity here, e.g. $$O(n)$$ -->
-$$O(|D|)$$ where D is the maximal depth of the tree. In the case of a balanced tree, the space complexity will be O(log(|V|)) and unbalanced tree is O(|V|).
+  <!-- Add your space complexity here, e.g. $$O(n)$$ -->
+  $$O(|D|)$$
+  where D is the maximal depth of the tree. In the case of a balanced tree, the space complexity will be O(log(|V|)) as this the maximal depth of a balanced tree and unbalanced tree is O(|V|) as this is the worst case.
 
 # Code
+
 ```py
 # Definition for a binary tree node.
 # class TreeNode:
@@ -28,12 +40,12 @@ $$O(|D|)$$ where D is the maximal depth of the tree. In the case of a balanced t
 #         self.right = right
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
-        if p is None and q is None: 
+        if p is None and q is None:
             print("going into here")
             return True
         elif p is None and q is not None:
             return False
-        elif p is not None and q is None: 
+        elif p is not None and q is None:
             return False
 
         rightTree = self.isSameTree(p.right, q.right)
