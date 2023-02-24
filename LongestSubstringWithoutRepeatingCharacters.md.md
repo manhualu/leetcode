@@ -41,24 +41,6 @@ Uses hashset to keep track of the characters currently in the window. If the cha
 
 # Code
 
-## Trivial method O(nlogn)
-
-```py
-class Solution:
-    def sortedSquares(self, nums: List[int]) -> List[int]:
-        squaredArray = []
-
-        for num in nums:
-            squaredArray.append(num**2)
-
-        squaredArray.sort()
-        # Returns array of the squares of each number in non-decreasing order.
-        return squaredArray
-
-```
-
-## O(n) method
-
 ```py
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
